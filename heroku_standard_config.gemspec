@@ -18,4 +18,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 3.2.0"
   s.add_dependency "rack-rewrite"
+  s.add_dependency "rack-protection"
 end
