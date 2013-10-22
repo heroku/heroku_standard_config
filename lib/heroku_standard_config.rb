@@ -1,3 +1,5 @@
+require 'rack/rewrite'
+
 module HerokuStandardConfig
   class Railtie < Rails::Railtie
     initializer "heroku_standard_config.remove_trailing_slashes" do |app|
