@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    heroku_standard_config (0.0.1)
+    heroku_standard_config (0.0.2)
       rack-protection
       rack-rewrite
       rails (~> 3.2.0)
