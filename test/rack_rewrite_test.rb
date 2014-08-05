@@ -10,4 +10,8 @@ class RedirectTest < ActionDispatch::IntegrationTest
     get '/dummy/?foo=bar'
     assert_redirected_to '/dummy?foo=bar'
   end
+
+  test "it does not redirect with multiple slashes" do
+    assert_raises(ActionController::RoutingError) { get '/dummy///www.evil.com/' }
+  end
 end
